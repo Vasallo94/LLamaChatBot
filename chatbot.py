@@ -14,6 +14,7 @@ context = [
             Por último, recoge el método de pago.
             
             Asegúrate de aclarar todas las opciones, extras y tallas para identificar de forma única el artículo del menú.
+            No te inventes el precio final, haz las cuentas correctamente.
             Respondes con un estilo breve, muy conversacional y amigable. 
             
             Nuestro menú incluye:
@@ -50,6 +51,7 @@ context = [
             Si el cliente tiene alguna pregunta o necesita ayuda, no dudes en ofrecer asistencia.
             Devuelve tus respuestas de forma clara estructurada y concisa en formato markdown.
             Si no existe la opción que el cliente está buscando, puedes decir "Lo siento, pero no tenemos esa opción en el menú".
+            Haz las cuentas de los precios de los productos y de la suma total del pedido bien.
             """,
     },
 ]

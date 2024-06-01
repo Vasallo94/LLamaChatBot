@@ -1,0 +1,82 @@
+/* Estilos generales */
+body {
+    font-family: Arial;
+    background-color: #e0e0e0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos para el contenedor del chat */
+.chat-container {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ai-bubble {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #2196F3;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    max-width: 60%;
+    word-wrap: break-word;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.human-bubble {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    position: absolute;
+    right: 20px;
+    display: inline-block;
+    max-width: 60%;
+    word-wrap: break-word;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/* Estilos para el área de entrada de texto */
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el emoticon del usuario */
+.human-bubble::before {
+    content: "\1F464";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 20px;
+}
+
+/* Estilos para el emoticon del asistente */
+.ai-bubble::before {
+    content: "\1F999";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-size: 20px;
+    color: #2196F3;
+}

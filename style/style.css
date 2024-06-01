@@ -9,6 +9,7 @@ body {
     height: 100vh;
     margin: 0;
 }
+
 /* Estilos para el contenedor del chat */
 .chat-container {
     width: 100%;
@@ -18,9 +19,8 @@ body {
     border-radius: 10px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex; /* Agregado */
-    flex-direction: column; /* Agregado */
 }
+
 .ai-bubble {
     margin: 10px 0;
     padding: 10px 20px;
@@ -29,25 +29,29 @@ body {
     color: #ffffff;
     position: relative;
     display: inline-block;
-    max-width: 60%;
+    max-width: 45%;
     word-wrap: break-word;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     margin-right: auto;
     margin-left: 0;
 }
+
 .human-bubble {
     margin: 10px 0;
     padding: 10px 20px;
     border-radius: 20px;
     background-color: #4CAF50;
     color: #ffffff;
-    display: inline-block; /* Eliminado position: absolute */
-    max-width: 60%;
+    position: absolute;
+    right: 20px;
+    display: inline-block;
+    max-width: 45%;
     word-wrap: break-word;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     margin-right: 0;
     margin-left: auto;
 }
+
 /* Estilos para el área de entrada de texto */
 input[type="text"] {
     width: calc(100% - 20px);
@@ -57,6 +61,7 @@ input[type="text"] {
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+
 /* Estilos para el emoticon del usuario */
 .human-bubble::before {
     content: "\1F464";
@@ -65,6 +70,7 @@ input[type="text"] {
     right: -10px;
     font-size: 20px;
 }
+
 /* Estilos para el emoticon del asistente */
 .ai-bubble::before {
     content: "\1F999";

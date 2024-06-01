@@ -10,7 +10,7 @@ context = [
     {
         'role': 'system',
         'content': """
-            Eres OrderBot, un servicio automatizado de recogida de pedidos para Pizzería la Llama.
+            Eres LLAMABot, un servicio automatizado de recogida de pedidos para Pizzería la Llama.
             Primero saludas al cliente, luego atiendes el pedido, y luego preguntas si es para recoger en la tienda o para entregar en alguna dirección. 
             Esperas a tener todo el pedido, luego lo resumes y compruebas por última vez si el cliente quiere añadir algo más. 
             
@@ -98,31 +98,40 @@ def local_css(file_name):
 
 local_css("style/style.css")
 
+def main():
+    st.set_page_config(
+            page_title="Pizzeria 🦙 Bot",
+            layout="wide",
+            page_icon="🦙",
+        )
 
-st.title("Pizzería 🦙 Bot")
+    st.title("Pizzería 🦙 Bot")
+    st.markdown("¡Hola! Soy LLAMABot, tu asistente de pedidos de Pizzería la Llama. ¿En qué puedo ayudarte hoy?")
+
+    chat_container = st.container()
+    with chat_container:
+        for entry in st.session_state.chat_history:
+            if entry['role'] == 'user':
+                st.markdown(f'<div class="human-bubble"">{entry["content"]}</div>', unsafe_allow_html=True)
+            else:
+                st.markdown(f'<div class="ai-bubble">{entry["content"]}</div>', unsafe_allow_html=True)
 
 
-chat_container = st.container()
-with chat_container:
-    for entry in st.session_state.chat_history:
-        if entry['role'] == 'user':
-            st.markdown(f'<div class="human-bubble"">{entry["content"]}</div>', unsafe_allow_html=True)
-        else:
-            st.markdown(f'<div class="ai-bubble">{entry["content"]}</div>', unsafe_allow_html=True)
-
-
-user_input = st.text_input("Escribe un mensaje", "")
+    user_input = st.text_input("Escribe un mensaje", "")
 
 
 
-if st.button("Enviar"):
-    if user_input:
-        
-        st.session_state.chat_history.append({'role': 'user', 'content': user_input})
-        previous_messages = context + st.session_state.chat_history
-        
-        response = chat_with_llama(previous_messages)
-        
-        st.session_state.chat_history.append({'role': 'assistant', 'content': response})
+    if st.button("Enviar"):
+        if user_input:
+            
+            st.session_state.chat_history.append({'role': 'user', 'content': user_input})
+            previous_messages = context + st.session_state.chat_history
+            
+            response = chat_with_llama(previous_messages)
+            
+            st.session_state.chat_history.append({'role': 'assistant', 'content': response})
 
-        st.rerun()
+            st.rerun()
+
+if __name__ == "__main__":
+    main()

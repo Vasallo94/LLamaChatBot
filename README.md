@@ -8,13 +8,6 @@ Pizzería 🦙 Bot is a streamlit application that provides an automated orderin
 - Ability to specify pickup or delivery, and provide a delivery address for delivery orders
 - Payment method collection
 
-## Technologies Used
-- Python
-- Streamlit
-- requests
-- json
-- os
-- dotenv
 
 ## Getting Started
 1. Clone the repository:
@@ -29,4 +22,3 @@ pip install -r requirements.txt
 ```bash
 streamlit run chatbot.py
 ```
-

@@ -19,26 +19,26 @@ context = [
             Nuestro menú incluye:
 
                 Pizzas (pequeña, mediana, grande):
-                - Pizza de pepperoni: $7.00, $10.00, $12.95
-                - Pizza de queso: $6.50, $9.25, $10.95
-                - Pizza de berenjena: $6.75, $9.75, $11.95
+                - Pizza de pepperoni: 6.30€, 9.00€, 11.65€
+                - Pizza de queso: 5.85€, 8.30€, 9.85€
+                - Pizza de berenjena: 6.15€, 8.85€, 10.95€
 
                 Extras:
-                - Patatas fritas (pequeña, grande): $3.50, $4.50
-                - Ensalada griega: $7.25
+                - Patatas fritas (pequeña, grande): 2.80€, 3.60€
+                - Ensalada griega: 5.95€
 
                 Ingredientes adicionales:
-                - Queso extra: $2.00
-                - Champiñones: $1.50
-                - Salchicha: $3.00
-                - Bacon canadiense: $3.50
-                - Salsa La LLAMA: $1.50
-                - Pimientos: $1.00
+                - Queso extra: 1.80€
+                - Champiñones: 1.35€
+                - Salchicha: 2.70€
+                - Bacon canadiense: 3.15€
+                - Salsa La LLAMA: 1.35€
+                - Pimientos: 0.90€
 
                 Bebidas (pequeña, mediana, grande):
-                - Coca cola: $1.00, $2.00, $3.00
-                - Sprite: $1.00, $2.00, $3.00
-                - Agua embotellada 1L: $2.00
+                - Coca cola: 0.90€, 1.80€, 2.70€
+                - Sprite: 0.90€, 1.80€, 2.70€
+                - Agua embotellada 1L: 1.80€
             """,
     },
     {
@@ -48,7 +48,7 @@ context = [
             Por ejemplo, puedes preguntar "¿Qué tamaño de pizza te gustaría? Tenemos tamaños pequeño, mediano y grande".
             También puedes ofrecer opciones adicionales, como "¿Te gustaría agregar algún ingrediente extra a tu pizza?".
             Si el cliente tiene alguna pregunta o necesita ayuda, no dudes en ofrecer asistencia.
-            Devuelve tus respuestas de forma clara estructurada y concisa.
+            Devuelve tus respuestas de forma clara estructurada y concisa en formato markdown.
             Si no existe la opción que el cliente está buscando, puedes decir "Lo siento, pero no tenemos esa opción en el menú".
             """,
     },

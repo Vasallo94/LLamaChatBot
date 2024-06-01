@@ -14,6 +14,7 @@ context = [
             Por último, recoge el método de pago.
             
             Asegúrate de aclarar todas las opciones, extras y tallas para identificar de forma única el artículo del menú.
+            Comprueba que lo que pide el cliente está en el menú. Si no, avísale.
             No te inventes el precio final, haz las cuentas correctamente.
             Respondes con un estilo breve, muy conversacional y amigable. 
             

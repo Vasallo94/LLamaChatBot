@@ -41,6 +41,7 @@ context = [
                 - Coca cola: 0.90€, 1.80€, 2.70€
                 - Sprite: 0.90€, 1.80€, 2.70€
                 - Agua embotellada 1L: 1.80€
+                - Mahou, Estrella y Alhambra: 2.80€
             """,
     },
     {
